@@ -1,8 +1,8 @@
 # ISPro-USB
 Image for ISPro Demo Appliance
 to write to USB drive
-Download the USB.dd.gz file with 
-use any live cd to run the following command
-to uncompress
-# gunzip -c /PATH/TO/USB.dd.gz | dd of=/dev/sdx(or your USB dribe)
-Boot to install the Image.
+Download the ISPro-USB.zst file 
+
+# used zstd to write the image to USB with minmum 16G capacity.
+## zstdcat -v /temp/ISPro-USB.zst >/dev/sdh
+where sdh is your USB drive.
